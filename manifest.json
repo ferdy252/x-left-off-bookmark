@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "X Left-Off Bookmark",
+  "version": "1.0.0",
+  "description": "Leave a book-style bookmark on X so you know where you left off reading. Works on Notifications, Home, Following, etc.",
+  "author": "Fernando",
+  "homepage_url": "https://github.com/",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "x-left-off-bookmark@example.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*", "*://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["bookmark.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
