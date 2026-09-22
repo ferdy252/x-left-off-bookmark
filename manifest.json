@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Leave a book-style bookmark on X so you know where you left off reading. Works on Notifications, Home, Following, etc.",
   "author": "Fernando",
-  "homepage_url": "https://github.com/",
+  "homepage_url": "https://github.com/ferdy252/x-left-off-bookmark",
   "icons": {
     "48": "icons/icon-48.png",
     "96": "icons/icon-96.png"
